@@ -2,9 +2,10 @@
   <div class="container-navbar">
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container-fluid">
+        <h4>{{ titulo.title }}</h4>
         <router-link to="/">
           <img
-            src="https://demo.factura123.mx/img/_logo-f123.png"
+            src="../assets/logo.png"
             alt="factura123Logo"
             data-bs-toggle="collapse"
           >
@@ -22,7 +23,7 @@
         </button> -->
         <div class="collapse navbar-collapse p-2" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <router-link to="/facturar" >
                 <button
                   data-bs-toggle="collapse"
@@ -54,7 +55,7 @@
                   Productos
                 </button>
               </router-link>
-            </li>
+            </li> -->
             <li class="nav-item">
               <router-link to="/cfdi" >
                 <button
@@ -118,7 +119,19 @@
   </div>
 </template>
 
+<script setup>
+  const titulo = defineProps({
+    title: {
+      type: String,
+      default: ''
+    },
+  })
+</script>
+
 <style lang="css" scoped>
+img {
+  height: 30px;
+}
 .container-navbar {
   position:fixed;
   padding-top: 5px;

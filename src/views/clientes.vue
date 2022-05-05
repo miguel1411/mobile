@@ -1,6 +1,6 @@
 <template>
+  <navbar title="Clientes" />
   <div class="container-clientes">
-    <h1>Clientes</h1>
     <div class="container-buscador form-floating mt-3 ">
       <input
         type="text"
@@ -42,6 +42,7 @@
 </template>
 
 <script setup>
+import navbar from "@/components/navbar.vue";
 import card  from '@/components/card.vue'
 import { ref, computed, onMounted } from 'vue';
 
@@ -121,28 +122,21 @@ import { ref, computed, onMounted } from 'vue';
 
 <style lang="css" scoped>
 .container-clientes {
-  margin-top: 80px;
+  margin-top: 60px;
 }
-  button {
-    background-color: rgb(252, 193, 46);
-    border: none;
-    border-radius: 6px;
-    padding: 6px;
-    width: 5rem;
-  }
-  input {
-    border-radius: 12px;
-    font-weight: 500;
-    color: rgb(78, 78, 78);
+input {
+  border-radius: 12px;
+  font-weight: 500;
+  color: rgb(78, 78, 78);
 
-    box-sizing: border-box;
-    padding: 15px 15px 15px 35px;
-    width: 100%;
-  }
-  p {
-    color: rgb(78, 78, 78);
-  }
-  .input-icon {
+  box-sizing: border-box;
+  padding: 15px 15px 15px 35px;
+  width: 100%;
+}
+p {
+  color: rgb(78, 78, 78);
+}
+.input-icon {
   color: rgb(80, 184, 212);
   position: absolute;
   width: 32px;
