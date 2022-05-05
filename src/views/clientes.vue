@@ -120,6 +120,9 @@ import { ref, computed, onMounted } from 'vue';
 </script>
 
 <style lang="css" scoped>
+.container-clientes {
+  margin-top: 80px;
+}
   button {
     background-color: rgb(252, 193, 46);
     border: none;

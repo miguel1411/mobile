@@ -49,6 +49,9 @@
 </template>
 
 <style lang="css" scoped>
+.container-factura {
+  margin-top: 70px;
+}
 label{
   color: rgb(150, 150, 150);
   font-weight: 400;

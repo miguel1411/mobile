@@ -33,6 +33,7 @@
 <style lang="css" scoped>
   h1 {
     text-align: center;
+    margin-top: 70px;
   }
   .opciones {
     display: flex;

@@ -9,7 +9,7 @@
             data-bs-toggle="collapse"
           >
         </router-link>
-        <button
+        <!-- <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
@@ -19,7 +19,7 @@
           aria-label="Toggle navigation"
         >
           <a class="navbar-toggler-icon" />
-        </button>
+        </button> -->
         <div class="collapse navbar-collapse p-2" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
@@ -119,19 +119,27 @@
 </template>
 
 <style lang="css" scoped>
-  .navbar {
-    border-bottom: solid 1px;
-    border-color: rgb(226, 226, 226);
-  }
-  a {
-    text-decoration: none;
-  }
-  button {
-    border: none;
-    background-color: #fff;
-  }
-  span {
-    display: inline-block;
-    margin-left: 7px;
-  }
+.container-navbar {
+  position:fixed;
+  padding-top: 5px;
+  z-index: 1;
+  background-color: #fff;
+  width: 100%;
+  opacity: .98;
+}
+.navbar {
+  border-bottom: solid 1px;
+  border-color: rgb(226, 226, 226);
+}
+a {
+  text-decoration: none;
+}
+button {
+  border: none;
+  background-color: #fff;
+}
+span {
+  display: inline-block;
+  margin-left: 7px;
+}
 </style>

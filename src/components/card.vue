@@ -64,7 +64,7 @@ const informacionCliente = defineProps({
 }
 button {
   width: 100%;
-  background-color: rgb(80, 184, 212);
+  background: linear-gradient(90deg, rgba(12, 163, 193, 0.884) 0%, rgba(49, 175, 203, 0.911) 35%, rgba(93,193,214,1) 100%);
   border: none;
   border-radius: 6px;
   padding: 6px;
@@ -80,7 +80,7 @@ img {
 }
 svg {
   margin: 5px;
-  color: rgb(80, 184, 212);
+  color: rgb(96, 189, 215);
   animation-name: opacidad;
   animation-duration: .7s;
 }
